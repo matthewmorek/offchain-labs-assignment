@@ -99,19 +99,26 @@ export default function Page() {
         </motion.div>
 
         <div className="z-10 flex max-w-xl flex-col items-center gap-y-8">
-          <h1 className="font-display flex flex-col text-[250px] leading-[200px] font-bold text-white uppercase italic">
+          <h1 className="font-display relative flex flex-col text-[250px] leading-[200px] font-bold text-white uppercase italic">
             <span className="ml-14">Arbitrum</span>
             <span>Everywhere</span>
+            <Image
+              src="/img/logo.svg"
+              width={128}
+              height={128}
+              alt="logo"
+              className="absolute top-1/2 left-1/2 -translate-1/2 drop-shadow-2xl"
+            />
           </h1>
           <p className="w-full flex-1 text-center text-[28px] leading-8 font-medium tracking-wide text-pretty text-white/75">
             From apps to chains, Arbitrum delivers the performance and tooling your business needs
             to launch faster and scale further.
           </p>
           <p className="mt-4 flex w-full flex-1 gap-x-4">
-            <button className="flex-1 rounded-full bg-black px-4 py-3 text-lg font-medium text-white">
+            <button className="flex-1 rounded-full bg-black px-4 py-3 text-lg font-medium text-white transition-transform duration-200 active:scale-95">
               Build an App
             </button>
-            <button className="flex-1 rounded-full bg-black px-4 py-3 text-lg font-medium text-white">
+            <button className="flex-1 rounded-full bg-black px-4 py-3 text-lg font-medium text-white transition-transform duration-200 active:scale-95">
               Launch a Chain
             </button>
           </p>
@@ -123,7 +130,7 @@ export default function Page() {
           ← Back
         </Link>
       </nav>
-      <article className="prose prose-lg max-w-2xl">
+      <article className="prose prose-lg max-w-2xl text-balance">
         <Markdown>{content}</Markdown>
       </article>
     </main>
