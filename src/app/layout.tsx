@@ -1,5 +1,5 @@
 import { Bebas_Neue, Inter, Nunito_Sans } from "next/font/google";
-import "./global.css";
+import "@/global.css";
 
 const body = Nunito_Sans({
   variable: "--font-body",
