@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
+// Note: metadata must be exported from a Server Component.
+// For client components, set metadata in a separate layout.tsx or use generateMetadata in parent.
+
 const reveal: Variants = {
   hidden: { clipPath: "inset(0 100% 0 0)" },
   visible: (i: number) => ({

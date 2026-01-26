@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Markdown from "react-markdown";
+
+export const metadata: Metadata = {
+  title: "Task #1",
+};
 
 const content = `# Arbitrum Open House CMS Schema
 

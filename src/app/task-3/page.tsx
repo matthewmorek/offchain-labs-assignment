@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -8,6 +9,10 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { NewsletterSignup } from "@/components/newsletter-signup";
+
+export const metadata: Metadata = {
+  title: "Task #3",
+};
 
 const navigationMenus = [
   {
